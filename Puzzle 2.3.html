@@ -1,0 +1,196 @@
+<html>
+    <head>
+       <title>Puzzle 2.3</title>
+          <style>
+              body
+              {
+                background-color:#9e9c9a;
+              }
+             .container
+              {
+                 border:10px solid white;
+                 width:400px;
+                 margin-left:30%;
+                 margin-top:10%;
+                 text-align:center;
+                 line-height: 130px;
+              }
+             #o
+              {
+                 width:100px;
+                 height:100px;
+                 background-color:#f9f395;
+              }
+             #tw
+             {
+                 width:100px;
+                 height:100px;
+                 background-color:#aac6a3;
+                 margin-left:100px;
+                 margin-top:-100px;
+             }
+             #th
+             {
+                 width:100px;
+                 height:100px;
+                 background-color:#a33115;
+                 margin-left:200px;
+                 margin-top:-100px;
+             }
+             #fo
+             {
+                 width:100px;
+                 height:100px;
+                 background-color:#f9f395;
+                 margin-left:300px;
+                 margin-top:-100px;
+   
+             }
+             #fi
+             {
+                 width:100px;
+                 height:100px;
+                 background-color:#d0eaea;
+             }
+             #si
+             {
+                 width:100px;
+                 height:100px;
+                 background-color:#e893ed;
+                 margin-left:100px;
+                 margin-top:-100px;
+             }
+             #se
+             {
+                 width:100px;
+                 height:100px;
+                 background-color:#e893ed;
+                 margin-left:200px;
+                 margin-top:-100px;
+             }
+             #ei
+             {
+                 width:100px;
+                 height:100px;
+                 background-color:#d0eaea;
+                 margin-left:300px;
+                 margin-top:-100px;
+             }
+             #ni
+             {
+                 width:100px;
+                 height:100px;
+                 background-color:#aac6a3;
+   
+             }
+             #te
+             {
+                 width:100px;
+                 height:100px;
+                 background-color:#e893ed;
+                 margin-left:100px;
+                 margin-top:-100px;
+             }
+             #li
+             {
+                 width:100px;
+                 height:100px;
+                 background-color:#a33115;
+                 margin-left:200px;
+                 margin-top:-100px;
+
+             }
+             #twe
+             {
+                width:100px;
+                height:100px;
+                background-color:#d0eaea;
+                margin-left:300px;
+                margin-top:-100px;
+
+             }
+             #thi
+             {
+                width:100px;
+                height:100px;
+                background-color:#e893ed;
+    
+             }
+             #fou
+             {
+                width:100px;
+                height:100px;
+                background-color:#f9f395;
+                margin-left:100px;
+                margin-top:-100px;
+             }
+             #fif
+             {
+                width:100px;
+                height:100px;
+                background-color:#e893ed;
+                margin-left:200px;
+                margin-top:-100px;
+             }
+             #six
+             {
+                width:100px;
+                height:100px;
+                background-color:#a33115;
+                margin-left:300px;
+                margin-top:-100px;
+             }
+  
+  
+          </style>
+           
+
+          <script src="Js.js"></script>
+          <script>
+              
+              
+                 
+               var arrid=[];
+               var arrcolor=[];
+               var c=0;
+               var c1=0;
+               function bell(x)
+               {
+                   var i=x.id;
+                   arrid.push(i);
+                   arrcolor.push(document.getElementById(i).style.backgroundColor);
+                   document.getElementById(i).style.backgroundColor='white';
+                   c++;
+                   if(c>3)
+                   {
+                      document.getElementById(arrid[c1]).style.backgroundColor=arrcolor[c1];
+                      c1++;
+                   }
+                   
+               }
+          </script>
+ 
+      
+    </head>
+    <body>
+        <div class="container">
+              <div id="o"  onclick="bell(this)">1</div>
+              <div id="tw"  onclick="bell(this)">2</div>
+              <div id="th"  onclick="bell(this)">3</div>
+              <div id="fo"  onclick="bell(this)">4</div>
+              <div id="fi"  onclick="bell(this)">5</div>
+              <div id="si"  onclick="bell(this)">6</div>
+              <div id="se"  onclick="bell(this)">7</div>
+              <div id="ei"  onclick="bell(this)">8</div>
+              <div id="ni"  onclick="bell(this)">9</div>
+              <div id="te"  onclick="bell(this)">10</div>
+              <div id="li"  onclick="bell(this)">11</div>
+              <div id="twe"  onclick="bell(this)">12</div>
+              <div id="thi"  onclick="bell(this)">13</div>
+              <div id="fou"  onclick="bell(this)">14</div>
+              <div id="fif"  onclick="bell(this)">15</div>
+              <div id="six"  onclick="bell(this)">16</div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,105 @@
+
+<html>
+<head>
+<title>Puzzle 2.5</title>
+
+<script src="JS.js"></script>
+
+<!--my style-->
+<style>
+  #one
+  {
+     margin-left:50px;
+     width:200px;
+     height:30px;
+  }
+  #btn1
+  {
+     width:70px;
+     height:30px;
+  }
+  #two
+  {
+    margin-left:35px;
+    width:200px;
+    height:30px;
+  }
+  #btn2
+  {
+    margin-left:2px;
+    width:70px;
+    height:30px;
+  }
+  #s1
+  {
+    width:265px;
+    margin-left:110px;
+  }
+  #s2
+  {
+    width:265px;
+    position:absolute;
+    left:470px;
+    top:40px;
+  }
+  #result
+  {
+     position:absolute;
+     top:50px;
+     left:850px;
+     
+  }
+</style>
+
+<!--my script-->
+<script>
+    $(document).ready(function(){
+        var arr1=[];
+        var i=0,j=0;
+        $("#btn1").click(function()
+        {
+
+              var element1=document.getElementById("one").value;
+              arr1[i]=parseInt(element1);
+              i++;
+              $("#s1").append(element1+"<hr>");
+        });
+ 
+        $("#btn2").click(function()
+        {
+              var element2=parseInt(document.getElementById("two").value);
+	        $("#s2").append(element2+"<hr>");
+                    for( j=0;j<arr1.length;j++)
+                    {
+                         var m=arr1[j]+element2;
+                         if(m>=100)
+                               $("#result").append(arr1[j]+"+"+element2+"="+m+"<br>");
+                    }
+        });
+    });
+  </script>
+
+
+</head>
+
+
+<!--My body part-->
+<body>
+
+
+   <lable>Form1:</lable>
+           <input type="text" id="one"> 
+           <button id="btn1">sudmit</button>
+
+
+  <lable>Form2:</lable>
+          <input type="text" id="two">
+          <button id="btn2">sudmit</button>
+<!--store value part-->
+
+  <p id="s1"></p>
+  <p id="s2"></p>
+  <p id="result"></p>
+
+</body>
+</html>
